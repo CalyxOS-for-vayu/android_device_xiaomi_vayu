@@ -17,7 +17,7 @@ static const variant_info_t vayu_global_info = {
     .device = "vayu",
     .marketname = "POCO X3 Pro",
     .model = "M2102J20SG",
-    .build_fingerprint = "google/cheetah/cheetah:13/TQ1A.230105.002/9325679:user/release-keys",
+    .build_fingerprint = "POCO/vayu_global/vayu:13/RKQ1.200826.002/V14.0.1.0.TJUMIXM:user/release-keys",
 
     .nfc = true,
 };

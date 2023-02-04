@@ -6,7 +6,6 @@
 
 # Inherit from sm8150-common
 include device/xiaomi/sm8150-common/BoardConfigCommon.mk
-include device/xiaomi/vayu/cheetah.mk
 
 DEVICE_PATH := device/xiaomi/vayu
 
