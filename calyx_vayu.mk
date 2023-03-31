@@ -14,6 +14,9 @@ $(call inherit-product, vendor/calyx/config/common.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+# Inherit ih8sn (to pass CTS profile)
+$(call inherit-product, device/xiaomi/vayu/ih8sn/ih8sn.mk)
+
 PRODUCT_NAME := calyx_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
