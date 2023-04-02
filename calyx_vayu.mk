@@ -14,9 +14,6 @@ $(call inherit-product, vendor/calyx/config/common.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit ih8sn (to pass CTS profile)
-$(call inherit-product, device/xiaomi/vayu/ih8sn/ih8sn.mk)
-
 PRODUCT_NAME := calyx_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
@@ -24,6 +21,8 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 Pro
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vayu_global-user 13 RKQ1.200826.002 V14.0.1.0.TJUMIXM release-keys"
+    PRIVATE_BUILD_DESC="vayu_global-user 11 RKQ1.200826.002 V12.0.4.0.RJUMIXM release-keys" \
+    PRODUCT_NAME=vayu_global \
+    PRODUCT_MODEL=M2102J20SG
 
-BUILD_FINGERPRINT := POCO/vayu_global/vayu:13/RKQ1.200826.002/V14.0.1.0.TJUMIXM:user/release-keys
+BUILD_FINGERPRINT := POCO/vayu_global/vayu:11/RKQ1.200826.002/V12.0.4.0.RJUMIXM:user/release-keys
